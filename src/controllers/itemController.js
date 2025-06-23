@@ -3,7 +3,7 @@ const itemService = require('../services/itemService');
 const logger = require('../utils/logger');
 
 exports.getAll = (req, res) => {
-  logger.info('Fetching all items');
+  logger.info('Fetching all items.');
   res.json(itemService.getAll());
 };
 
