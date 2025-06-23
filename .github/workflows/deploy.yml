@@ -15,6 +15,6 @@ jobs:
         uses: bervProject/railway-deploy@main
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'production' || github.ref == 'refs/heads/stage' && 'stagin' }}
+          RAILWAY_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'production' || github.ref == 'refs/heads/stage' && 'staging' }}
         with:
           service: "hello-service-api"
